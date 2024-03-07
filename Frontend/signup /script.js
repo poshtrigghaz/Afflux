@@ -1,11 +1,24 @@
-let email = document.getElementById('email'),
-password = document.getElementById('password')
+document.addEventListener('DOMContentLoaded', function () {
+    var signupButton = document.querySelector('.btn');
 
+    signupButton.addEventListener('click', function () {
+      signUpButtonPressed();
+    });
 
-function signUpButtonPressed(){
-    firebase.auth().createUserWithEmailAndPassword(email.Value, password.value).then(auth => {
-        console.log(auth);
-    }).catch(error => {
-        console.log(error.message);
-    })
-}
+    signupButton.addEventListener('click', function () {
+        signUpButtonPressed();
+    });
+
+    function signUpButtonPressed() {
+      var email = document.getElementById('email').value;
+      var password = document.getElementById('password').value;
+
+      firebase.auth().createUserWithEmailAndPassword(email, password)
+        .then(auth => {
+          console.log(auth);
+        })
+        .catch(error => {
+          console.log(error.message);
+        });
+    }
+  });
