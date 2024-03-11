@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', function () {
-    var signupButton = document.querySelector('.btn');
+    var signupButton = document.querySelector('#btn');
 
     signupButton.addEventListener('click', function () {
       signUpButtonPressed();
