@@ -16,7 +16,9 @@
 html, body{
     height: 100%;
     overflow: hidden;
-    background: var(--background1);
+    background-image: url(assets/img6.png);
+    background-size: cover; 
+    background-repeat: no-repeat;
     /*background: var(--mango-gradient);*/
 }
 
@@ -26,20 +28,19 @@ html, body{
     --background1: rgb(179, 245, 185);
     --mango-gradient : linear-gradient(to right, #51ff51, #59ff82);
     --text-color: #020202;
-    --primary-shadow: 3px 4px 7px rgba(27, 27, 27, 0.534);
+    --primary-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1);
     --border-color: rgba(0,0,0,0.329);
 }
 
 header{
     width: 100%;
-    height: 70px;
-    box-shadow: var(--primary-shadow);
-    position: absolute;
+    height: 60px;
 }
 
 header img{
     width: 200px;
-    height: 50px;
+    height: 80px;
+    padding-top: 30px;
 }
 
 header .image {
@@ -88,7 +89,7 @@ header .ii{
 .container .panel{
     width: 60%;
     height: 72%;
-    box-shadow: var(--primary-gradient);
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1);
 }
 
 .row{
@@ -97,7 +98,7 @@ header .ii{
     grid-template-columns: 65% 35%;
     height: 100%;
     background: #fff;    
-    box-shadow: var(--primary-shadow);
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1);
 }
 
 .liquid{
@@ -136,11 +137,11 @@ header .ii{
 
 .owl-carousel .owl-item .login_img{
     float: right;
-    width: 50%;
+    width: 70%;
     height: 30%;
     background-repeat: no-repeat;
     background-size: contain;
-    padding-right: 10rem;
+    padding-right: 4rem;
     padding-top: 3rem;
 }
 
@@ -222,7 +223,7 @@ header .ii{
 }
 
 .btn:hover{    
-    box-shadow: var(--primary-shadow);
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1);
 }
 
 .login .btn-signup, 
@@ -231,10 +232,12 @@ header .ii{
     float: right;
     margin: 1rem;
 }
+
 form .btn-signup{
     background: var(--primary-gradient);
     float: right;
 }
+
 .titles{
     margin-bottom: 2.2rem;
 }
@@ -246,15 +249,22 @@ form{
 }
 
 form h3, form h6{
-    font-family: var(--Montserrat);
     padding: 0;
     margin: 0;
-    padding-left: 3rem;
+    /*padding-left: 3rem;*/
+    align-items: center;
+    text-align: center;
 }
 
 form h6{
-    font-family: var(--Lobster);
+    font-size: 8px;
     color: #444444d2;
+}
+
+form h3{
+    font-size: 16px;
+    color: #444444d2;
+    font-weight: 600;
 }
 
 form .form-group{
@@ -265,12 +275,13 @@ form .form-group{
     border-radius: 3rem;
 }
 
+
 form .form-group .form-input{
     padding: .5rem 1rem;
     background: transparent;
     border: none;
     font-family: var(--Montserrat);
-    font-size: .9rem;
+    font-size: .6rem;
     overflow: hidden;
 }
 
@@ -301,11 +312,6 @@ form .btn-signup{
     margin-left: 2rem;
 }
 
-.titles1{
-    position: absolute;
-    top: 15px;
-}
-
 #login-page{
     position: absolute;
     right: 21%; 
@@ -318,8 +324,9 @@ form .btn-signup{
 }
 
 form .agrees{
-    color: var(--border-color);
-    font-family: var(--Lobster);
+    color: #000 ;
     padding-right: 10px;
     margin-top: 10px;
+    font-size: 0.5rem;
+    border: 0%;
 }
