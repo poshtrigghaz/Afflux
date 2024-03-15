@@ -1,0 +1,113 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: auto;
+    text-align: center;
+    background-color: slategray;
+    
+}
+
+h1 {
+    color: black;
+    font-size: 3.5rem;
+    text-decoration: underline;
+    margin-bottom: 60px;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 20px;
+    align-items: center;
+    margin: auto;
+    background-color: aliceblue;
+    max-width: fit-content;
+    height: 100vh;
+    /* border-radius: 5px; */
+    padding: 50px;
+    /* box-shadow: 5px 5px 5px; */
+}
+
+#conversion-div {
+    margin-bottom: 10px;
+}
+
+#info {
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    gap: 10px;
+    padding: 10px;
+}
+
+#display {
+    color: black;
+    min-height: 300px;
+    gap: 30px;
+}
+
+#display h4 {
+    font-size: 1.5rem;
+}
+
+#display h3 {
+    font-size: 2rem;
+    font-weight: bolder;
+}
+
+#display h5 {
+    font-size: 1rem;
+    color: slategray;
+    margin-top: -30px;
+    text-decoration: overline;
+    font-weight: 100;
+}
+
+h4 {
+    color: gray;
+    font-weight: normal;
+    font-variant: all-small-caps;
+}
+
+button {
+    font-size: 1.3rem;
+    /* font-weight: ; */
+    color: black;
+    border: silver solid 1px;
+    padding: 5px;
+    border-radius: 2px;
+}
+
+#swap {
+    width: 155px;
+}
+
+#convert {
+    width: 155px;
+    margin-top: 10px;
+}
+ 
+input {
+    width: 150px;
+    height: 30px;
+    font-size: 1.5rem;
+    text-align: center;
+    border: slategray solid 1px;
+}
+
+footer {
+    color: slategray;
+    font-weight:100;
+}
+
+a {
+    color: slategray;
+}
+
+a:visited {
+    color: slategray;
+}
+
+a:hover {
+    color: black;
+}

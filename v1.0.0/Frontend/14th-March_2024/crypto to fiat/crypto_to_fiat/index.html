@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crypto Conversion</title>
+    <script src="scripts/crypto-convert-scripts.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/crypto-convert-style.css">
+</head>
+<body>
+    <main>
+        <h1>Afflux Crypto</h1>
+
+        <div id="conversion-div">
+            <span id="conversion-info" hidden>Crypto to Fiat</span> 
+            <button type="button" id="swap" title="Click to change the conversion type">Crypto to Fiat</button>
+        </div>
+
+        <form>
+            <div id="info">
+                <div id="convert-from">
+                    <form id="crypto-datalist">
+                        <input id="crypto-input" list="crypto-list" name="coin" placeholder="Crypto">
+                        <datalist id="crypto-list">
+                            <option value="BTC" data-ticker="BTC" data-id="bitcoin">BTC</option>
+                            <option value="ETH" data-ticker="ETH" data-id="ethereum">ETH</option>
+                            <option value="ADA" data-ticker="ADA" data-id="cardano">ADA</option>
+                            <option value="SOL" data-ticker="SOL" data-id="solana">SOL</option> 
+                            <option value="LRC" data-ticker="LRC" data-id="loopring">LRC</option>   
+                        </datalist>
+                    </form>
+                </div>
+    
+                <input type="number" name="amount" id="amount" min="0" value="0">
+    
+                <div id="convert-to">
+                    <form id="fiat-datalist">
+                        <input id="fiat-input" list="fiat-list" name="fiat" placeholder="Fiat">
+                        <datalist id="fiat-list">
+                            <option value="USD" data-ticker="USD" data-id="usd">USD</option>
+                            <option value="EUR" data-ticker="EUR" data-id="eur">EUR</option>
+                            <option value="BRL" data-ticker="BRL" data-id="brl">BRL</option>
+                            <option value="JPY" data-ticker="JPY" data-id="jpy">JPY</option>
+                        </datalist>
+
+                    </form>
+                </div>
+            </div>
+            
+            <button type="button" id="convert">Convert</button>
+        </form>
+
+        <section id="display">
+            <h3></h3>
+            <h5></h5>
+            <h4>Converted Value</h4>
+        </section>
+
+
+    </main>
+</body>
+</html>

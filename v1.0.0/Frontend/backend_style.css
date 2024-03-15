@@ -1,0 +1,231 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+* {
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    scroll-behavior: smooth;
+    font-weight: 400;
+
+}
+
+.auto-type {
+    font-weight: 600;
+}
+
+:root {
+    --bg-color: #fff;
+    --second-bg-color: #0C5300;
+    --text-color: #000000;
+    --main-color: #00faa8;
+    --h2-font: 300;
+
+}
+
+html {
+    font-size: 62.5%;
+    overflow-x: hidden;
+
+}
+
+.header {
+    background-image: url('images/img6.png');
+    background-size: cover; 
+    background-repeat: no-repeat;
+}
+
+section { 
+    padding: 10rem 9% 2rem;
+    background-image: url('images/img6.png');
+    background-size: cover; 
+    background-repeat: no-repeat;
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 2rem 9%;
+    background: var(--bg-color);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+
+}
+
+.logo img {
+    font-size: 2.5rem;
+    color: var(--main-color);
+    font-weight: 600;
+    cursor: default;
+    width: 100px; 
+    height: auto;
+}
+
+.navbar a {
+    color: var(--text-color);
+    text-decoration: none;
+    font-size: 1.2rem;
+    position: relative;
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
+    font-weight: 600;
+
+}
+
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    border-radius: 4rem; 
+    background-color: var(--main-color); 
+    color: var(--bg-color); 
+    text-decoration: none; 
+  }
+
+.home {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 50vh;
+}
+
+.home-content h1 {
+    font-size: 5rem;
+    font-weight: 700;
+    line-height: 1.3;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.highlight {
+    font-size: 5rem;
+    font-weight: 700;
+    line-height: 1.5;
+    color: #00faa8;
+}
+
+.home-content p {
+    font-size: 1.5rem;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Services */
+
+.services {
+    background: var(--bg-color);
+    min-height: 50vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-items: center;
+    background-image: url('images/img6.png');
+    background-size: cover; 
+    background-repeat: no-repeat;
+}
+
+.services-content {
+    display: flex;
+    grid-template-columns: repeat(auto-fit, minmax(250px, auto));
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    margin-top: -19rem;
+}
+
+.box {
+    background: #fff;
+    padding: 35px 45px;
+    border-radius: 4rem;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1);
+    transition: all .45s ease;
+    display: flex;
+    align-items: center;
+}
+
+.box img {
+    width: 7vw;
+    padding: 0 10px;
+}
+
+.box h3 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--text-color);
+    margin-bottom: 0.9rem;
+    text-align: left;
+}
+
+.box p {
+    text-align: center;
+    color: var(--text-color);
+    font-size: 1.3rem;
+    line-height: 1.5;
+    margin-bottom: 0.6rem;
+
+}
+
+.box:hover {
+    transform: translateY(-8px);
+    cursor: pointer;
+}
+
+/* footer */
+
+.footer {
+    height: 5vh;
+    justify-content: center;
+    align-items: center;
+    padding: 10rem 9% 2rem;
+}
+
+
+.footer-img a {
+    font-size: 2.5rem;
+    cursor: default;
+    width: 2rem;
+    height: auto;
+    margin-top: -5rem;
+    border: 1rem 0 0 0;
+    margin: 3rem 1.5rem 3rem 0;
+}
+
+.footer-arrange {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.privacy p {
+    display: flex;
+    margin-top: -5rem;
+    display: inline-flex;
+    margin: 3rem 1.5rem 3rem 0;
+    text-decoration: underline;
+}
+
+.copyright p {
+    display: inline-flex;
+}
+
+.bx i {
+    margin-top: -5rem;
+    display: inline-flex;
+    width: 2rem;
+    height: 2rem;
+    font-size: 2rem;
+    color: #000;
+    margin: 3rem 1.5rem 3rem 0;
+
+}

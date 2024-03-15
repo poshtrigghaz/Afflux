@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+         <!-- box icons-->
+         <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    
+         <!-- custom css-->
+        <link rel="stylesheet" href="backend_style.css">
+    
+        <!-- Custom Javascript-->
+        <link rel="stylesheet" href="backend_script.js">
+        <title>Afflux</title>
+    </head>
+
+<body>
+  <main>
+     <!-- header design -->
+     <header class="header">
+        <a href="#" class="logo"><img src="backend_images/logo.png" alt="Logo"></a>
+    
+        <nav class="navbar">
+            <a href="currency_converter/index.html">CONVERTER</a>
+            <a href="graph%20currency.html">STOCK MARKET</a>
+            <a href="crypto%20to%20fiat/crypto_to_fiat/index.html">CRYPTO</a>
+            <a href="#services">COINY</a>
+            <a href="#signup" class="button" id="btn"><span style="color: #fff; font-size: 1.2rem; font-weight: 700;">Username</span></a>
+        </nav>
+    </header>
+    
+     <!-- home section design -->
+     <section class="home" id="home">
+        <div class="home-content">
+            <h1>Hello, Welcome to <span class="highlight">Afflux.</span></h1>
+            <p>Your all-in-one financial Assistant.</p>
+        </div>
+    </section>
+    
+    <!-- services section design -->
+    <section class="services" id="services">
+    
+        
+        <div class="services-content">
+            <div class="box">
+                <div class="tag-image">
+                    <img src="backend_images/tag2.png" alt="">
+                </div>
+                <a href="currency_converter/index.html"><h3>CURRENCY <br> CONVERTER</h3></a>
+
+            </div>
+
+
+            
+    
+            <div class="box">
+                <div class="tag-image">
+                    <img src="backend_images/tag1.png" alt="">
+                </div>
+                <a href="graph%20currency.html"><h3> STOCK <br> MARKET</h3></a>
+            </div>
+
+            <div class="box">
+                <div class="tag-image">
+                    <img src="backend_images/tag1.png" alt="">
+                </div>
+                <a href="crypto%20to%20fiat/crypto_to_fiat/index.html"><h3> CRYPTO <br> CONVERTER</h3></a>
+            </div>
+    
+            <div class="box">
+                <div class="tag-image">
+                    <img src="backend_images/tag3.png" alt="">
+                </div>
+                <h3>COINY <br> AI ASSISTANT</h3>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Footer -->
+    <section class="footer" id="footervh">
+        <div class="footer-arrange">
+            <div class="footer-img">
+                <a href="#" class="logo"><img src="backend_images/logo.png"></a>
+            </div>
+    
+            <div class="copyright">
+                <p>© 2024 Afflux. All rights reserved.</p>
+            </div>
+    
+            <div class="privacy">
+                <p>Privacy Policy</p>
+                <p>Terms of Services</p>
+                <p>Cookie Setting</p>
+            </div>
+    
+            <div class="bx">
+                <i class='bx bxl-facebook-circle'></i>
+                <i class='bx bxl-twitter' ></i>
+                <i class='bx bxl-github' ></i>
+                <i class='bx bxl-linkedin-square' ></i>
+            </div>
+        </div>   
+     </section>
+    
+    
+    </body>
+    </html>
+
+
+</main>
+    <button onclick="logout()">logout</button>
+    <script src="https://www.gstatic.com/firebasejs/4.8.1/firebase.js"></script>
+
+    <script>
+        // Your web app's Firebase configuration
+  var firebaseConfig = {
+    apiKey: "AIzaSyAHGmponSC3UwD2MgysWqMtD_DnJypDhFk",
+
+authDomain: "test3-9b404.firebaseapp.com",
+
+databaseURL: "https://test3-9b404-default-rtdb.firebaseio.com",
+
+projectId: "test3-9b404",
+
+storageBucket: "test3-9b404.appspot.com",
+
+messagingSenderId: "645757928508",
+
+appId: "1:645757928508:web:0d3a55fd2ee5bd879aef39"
+
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+  var database = firebase.database();
+    </script>
+    <script type="text/javascript" src="index.js"></script>
+</body>
+</html>
