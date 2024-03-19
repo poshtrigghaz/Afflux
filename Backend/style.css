@@ -180,3 +180,52 @@ section {
     transform: translateY(-8px);
     cursor: pointer;
 }
+
+/* footer */
+
+.footer {
+    height: 5vh;
+    justify-content: center;
+    align-items: center;
+    padding: 10rem 9% 2rem;
+}
+
+
+.footer-img a {
+    font-size: 2.5rem;
+    cursor: default;
+    width: 2rem;
+    height: auto;
+    margin-top: -5rem;
+    border: 1rem 0 0 0;
+    margin: 3rem 1.5rem 3rem 0;
+}
+
+.footer-arrange {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.privacy p {
+    display: flex;
+    margin-top: -5rem;
+    display: inline-flex;
+    margin: 3rem 1.5rem 3rem 0;
+    text-decoration: underline;
+}
+
+.copyright p {
+    display: inline-flex;
+}
+
+.bx i {
+    margin-top: -5rem;
+    display: inline-flex;
+    width: 2rem;
+    height: 2rem;
+    font-size: 2rem;
+    color: #000;
+    margin: 3rem 1.5rem 3rem 0;
+
+}
