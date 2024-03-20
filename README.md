@@ -1,5 +1,5 @@
-![logo](https://github.com/Poshtriggha/Afflux/assets/134752035/e0f12923-5034-4018-8e96-2c964fd6531d)
 
+![Untitled-1](https://github.com/Poshtriggha/Afflux/assets/134752035/3432ac52-b1a2-4fcb-83c6-70fd1c17dcdd)
 
 Aim of Project:
 To develop a converter that converts from one currency to another. For example United State Dollar to Ghanaian Cedi. This converter also handles cryptocurrency conversions eg. Bitcoin to Solana ; The converter also handles cryptocurrency to fiat currency conversions. Eg. Bitcoin to USD.
