@@ -2,6 +2,7 @@ var loginpage = document.getElementById("login-page");
 var signuppage = document.getElementById("signup-page");
 var loginform = document.getElementById("login-form");
 var signupform = document.getElementById("signup-form");
+
 signupform.style.display = "none";
 
 function signupForm(){
@@ -62,16 +63,39 @@ loginform.addEventListener('submit',(e) =>{
     firebase.auth().signOut();
   }
 
-signupform.addEventListener('submit',(e) =>{
-  e.preventDefault();
-  var email= document.getElementById("email").value;
-  var pass =document.getElementById("password").value;
-  var name =document.getElementById("name").value;
-  var user = firebase.auth().currentUser;
+  signupform.addEventListener('submit',(e) =>{
+    e.preventDefault();
+    var email= document.getElementById("email").value;
+    var pass =document.getElementById("password").value;
+    var name =document.getElementById("name").value;
+    var username = document.getElementById("usrname").value;
   
-  firebase.auth().createUserWithEmailAndPassword(email,pass).then(cred => {
-
+    firebase.auth().createUserWithEmailAndPassword(email, pass)
+    .then(cred => {
+      var user = firebase.auth().currentUser;
+      var database_ref = firebase.database().ref('users/' + user.uid);
+  
+      var user_data = {
+        username: username,
+        email: email,
+        last_login: firebase.database.ServerValue.TIMESTAMP
+      };
+      
+      // Set user data in the database
+      database_ref.set(user_data)
+      .then(() => {
+        console.log('User data added to Firebase Database');
+        // You can redirect or perform other actions here
+      })
+      .catch(error => {
+        console.error('Error adding user data to Firebase Database:', error);
+      });
+    })
+    .catch(error => {
+      console.error('Error creating user:', error);
+    });
   });
+  
   firebase.auth().signInWithEmailAndPassword(email, pass).catch(function(error) {
     // Handle Errors here.
     var errorCode = error.code;
@@ -82,7 +106,7 @@ signupform.addEventListener('submit',(e) =>{
     // ...
   });
   
-});
+
 
 function change(){
   var user = firebase.auth().currentUser;
