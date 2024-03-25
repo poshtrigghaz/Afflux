@@ -5,6 +5,7 @@
       // User is signed in.
       var userUid = user.uid;
       var usernameDisplay = document.getElementById("usernameDisplay");
+      var bannerDisplay = document.getElementById("bannerDisplay");
   
       // Get a reference to the user's data in the database
       var userRef = firebase.database().ref('users/' + userUid);
@@ -15,6 +16,7 @@
         if (userData && userData.username) {
           // Update the usernameDisplay element with the fetched username
           usernameDisplay.textContent = userData.username;
+          bannerDisplay.textContent = userData.username;
         }
       });
 
