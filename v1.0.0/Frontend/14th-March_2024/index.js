@@ -3,10 +3,21 @@
   firebase.auth().onAuthStateChanged(function(user) {
     if (user) {
       // User is signed in.
-      window.alert("hi"+" "+user.uid);
-      var userid=user.uid;
-      var nam = user.displayName;
-      appt(userid, nam);
+      var userUid = user.uid;
+      var usernameDisplay = document.getElementById("usernameDisplay");
+  
+      // Get a reference to the user's data in the database
+      var userRef = firebase.database().ref('users/' + userUid);
+  
+      // Listen for changes in the user's data
+      userRef.on('value', function(snapshot) {
+        var userData = snapshot.val();
+        if (userData && userData.username) {
+          // Update the usernameDisplay element with the fetched username
+          usernameDisplay.textContent = userData.username;
+        }
+      });
+
     } else {
       // No user is signed in.
       /*window.location.replace("http://127.0.0.1:5500/login.html");*/
