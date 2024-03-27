@@ -2,7 +2,7 @@ body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin: auto;
     text-align: center;
-    background-color: slategray;
+    background-color: rgb(0, 128, 90);
     
 }
 
@@ -111,3 +111,32 @@ a:visited {
 a:hover {
     color: black;
 }
+
+button {
+    font-size: 1em;
+    width: 50%;
+    background-color: #0C5300;
+    padding: 1em 0;
+    margin-top: 2em;
+    border-radius: 30px;
+    color: #ffffff;
+    font-weight: 600;
+    margin-left: auto; /* Center horizontally */
+    margin-right: auto; /* Center horizontally */
+    display: block; /* Make button a block-level element */
+  }
+
+
+  #out {
+    font-size: 1em;
+    width: 50%;
+    background-color: rgb(255, 72, 0);
+    padding: 1em 0;
+    margin-top: 2em;
+    border-radius: 30px;
+    color: #ffffff;
+    font-weight: 600;
+    margin-left: auto; /* Center horizontally */
+    margin-right: auto; /* Center horizontally */
+    display: block; /* Make button a block-level element */
+  }
