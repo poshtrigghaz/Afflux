@@ -64,13 +64,18 @@
     height: 400px;
     border: none;
   }
+
+  #out{
+    background-color: red;
+
+  }
 </style>
 </head>
 <body>
 
 <div class="container">
   <h2>Custom Chart Generator</h2>
-  <button onclick="logout()">logout</button>
+ 
   <form id="chartForm">
     <div class="form-group">
       <label for="pairID">Currency Pair:</label>
@@ -93,6 +98,8 @@
   </form>
 
   <div id="chartContainer"></div>
+
+  <button id= "out" onclick="logout()">logout</button>
 </div>
 
 <script>
