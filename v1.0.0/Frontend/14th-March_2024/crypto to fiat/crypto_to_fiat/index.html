@@ -10,8 +10,9 @@
 </head>
 <body>
     <main>
-        <h1>Afflux Crypto</h1>
-        <button onclick="logout()">logout</button>
+        <img src="logo.png"  width="280" 
+        height="90" class="app-icon" />
+       
 
         <div id="conversion-div">
             <span id="conversion-info" hidden>Crypto to Fiat</span> 
@@ -29,6 +30,23 @@
                             <option value="ADA" data-ticker="ADA" data-id="cardano">ADA</option>
                             <option value="SOL" data-ticker="SOL" data-id="solana">SOL</option> 
                             <option value="LRC" data-ticker="LRC" data-id="loopring">LRC</option>   
+                            <option value="USDT" data-ticker="USDT" data-id="tether">Tether</option>
+                            <option value="BNB" data-ticker="BNB" data-id="bnb">BNB</option>
+                            <option value="SOL" data-ticker="SOL" data-id="solana">Solana</option>
+                            <option value="XRP" data-ticker="XRP" data-id="xrp">XRP</option>
+                            <option value="DOGE" data-ticker="DOGE" data-id="dogecoin">Dogecoin</option>
+                            <option value="MATIC" data-ticker="MATIC" data-id="polygon">Polygon(MATIC)</option>
+                            <option value="XLM" data-ticker="XLM" data-id="stellar">Stellar</option>
+                            <option value="VET" data-ticker="VET" data-id="vechain">VeChain(VET)</option>
+                            <option value="FTM" data-ticker="FTM" data-id="fantom">Fantom</option>
+                            <option value="DOT" data-ticker="DOT" data-id="polkadot">Polkadot</option>
+                            <option value="AVAX" data-ticker="AVAX" data-id="avalanche">Avalanche(AVAX)</option>
+                            <option value="LTC" data-ticker="LTC" data-id="litecoin">Litecoin(LTC)</option>
+                            <option value="ALGO" data-ticker="ALGO" data-id="algorand">ALGO</option>
+                            <option value="XTZ" data-ticker="XTZ" data-id="tezos">Tezos</option>
+                            <option value="PEPE" data-ticker="PEPE" data-id="pepe">Pepe</option>
+                            <option value="FIL" data-ticker="FIL" data-id="filecoin">filecoin</option>
+                            <option value="SHIB" data-ticker="SHIB" data-id="shiba&nbsp;inu">Shiba Inu</option>       
                         </datalist>
                     </form>
                 </div>
@@ -58,7 +76,7 @@
             <h4>Converted Value</h4>
         </section>
 
-
+        <button id = "out" onclick="logout()">logout</button>
     </main>
     <script src="https://www.gstatic.com/firebasejs/4.8.1/firebase.js"></script>
 
