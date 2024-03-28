@@ -3,7 +3,6 @@
 firebase.auth().onAuthStateChanged(function(user) {
     if (user) {
       // User is signed in.
-      window.alert("hi"+" "+user.uid);
       var userid=user.uid;
       var nam = user.displayName;
       appt(userid, nam);
@@ -37,8 +36,6 @@ function appt(id,name){
 var dbref = firebase.database().ref();
 var somevalue = "hi";
 dbref.child("text").set(id);
-alert(id);
-alert(name);
 }
 
 
