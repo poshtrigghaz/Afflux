@@ -50,8 +50,6 @@ function appt(id,name){
 var dbref = firebase.database().ref();
 var somevalue = "hi";
 dbref.child("text").set(id);
-alert(id);
-alert(name);
 }
 
 
