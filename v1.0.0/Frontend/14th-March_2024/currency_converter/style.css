@@ -10,6 +10,9 @@
 }
 body {
   background-color: white;
+  background-image: url(img6.png);
+  background-size: cover; 
+  background-repeat: no-repeat;
 }
 
 #container {
